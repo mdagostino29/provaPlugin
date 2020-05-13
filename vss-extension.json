@@ -42,10 +42,6 @@
 	},
     "files": [        
 		{
-            "path": "provaplugin.html",
-			"addressable": true
-        },
-		{
             "path": "my-hub.html",
 			"addressable": true	
         },
@@ -54,14 +50,9 @@
 			"addressable": true
         },
 		{
-            "path": "js/site.js",
+            "path": "site.js",
 			"addressable": true,
 			"contentType": "text/javascript"
-        },		
-		{
-            "path": "esempioPlugin.css",
-			"addressable": true,
-			"contentType": "text/css"
         }
     ]
 }
