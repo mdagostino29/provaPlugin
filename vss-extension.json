@@ -45,14 +45,23 @@
             "path": "my-hub.html",
 			"addressable": true	
         },
+		{
+            "path": "provaplugin.html",
+			"addressable": true	
+        },
         {
-            "path": "node_modules/vss-web-extension-sdk/lib",
+            "path": "node_modules/vss-web-extension-sdk",
 			"addressable": true
         },
 		{
-            "path": "site.js",
+            "path": "js/site.js",
 			"addressable": true,
 			"contentType": "text/javascript"
+        },
+		{
+            "path": "esempioPlugin.css",
+			"addressable": true,
+			"contentType": "text/css"
         }
     ]
 }
