@@ -1,0 +1,35 @@
+ul{
+    position: relative;
+    width: 300px;
+    height: 30px;
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+
+ul li{
+    position: relative;
+    width: 98px;
+    height: 30px;
+    float: left;
+    margin-right: 1px;
+    border-right: 1px solid red;
+    background: white;
+}
+
+ul li ul{
+    position: relative;
+    width: 30px;
+    height: 90px;
+    top: 30px;
+    display: none;
+}
+
+ul li:hover ul{
+    position: absolute;
+    display: block; 
+}
+
+ul li ul li{
+   clear: left;
+}
