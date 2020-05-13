@@ -36,6 +36,10 @@
             }
         }
     ],
+	"repository": {
+		"type": "git",
+		"uri": "https://github.com/mdagostino29/provaPlugin"
+	},
     "files": [        
 		{
             "path": "provaplugin.html",
@@ -55,7 +59,7 @@
 			"contentType": "text/javascript"
         },		
 		{
-            "path": "esempio.css",
+            "path": "esempioPlugin.css",
 			"addressable": true,
 			"contentType": "text/css"
         }
