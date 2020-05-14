@@ -4,6 +4,40 @@
         <meta charset="utf-8" />
         <title>Prova Plugin</title>
         <link rel="stylesheet" type="text/css" href="location.href='esempioPlugin.css'" />
+		<script type="text/javascript">
+			window.__vssNoSandboxShim = true;
+			VSS.init({explicitNotifyLoaded: true});
+			//var a = VSS.getAppToken();
+		   var a = VSS.getAppToken();
+		   console.log(typeof(a))
+			VSS.getAppToken().then(function(token){
+				console.log("AppToken: "+ JSON.stringify(token));
+			})
+
+			VSS.getAccessToken().then(function(token){
+				console.log("AccessToken: "+ JSON.stringify(token));
+			})
+
+			VSS.getAccessToken().then(function(token){
+					// Format the auth header
+					var authHeader = VSS_Auth_Service.authTokenManager.getAuthorizationHeader(token);
+					console.log(JSON.stringify(authHeader));
+			})
+			VSS.ready(function () {
+				var contrib = "test-fis";
+				
+				VSS.register(contrib, {
+
+					pageTitle: function (state) {
+					},
+					isInvisible: function (state) {
+						// Hide this tab if the user has selected the "Unsaved work items" pseudo-query.
+						return false;
+					}
+				});
+				VSS.notifyLoadSucceeded();
+			});
+		</script>
     </head>
     <body>
         <div class="corpo">
